@@ -1,5 +1,4 @@
 #!/bin/bash
-# SKUBIRA
 BEE_IP="195.239.80.210"
 RTK_IP="94.25.71.242"
 
@@ -29,7 +28,7 @@ if check_ping "$BEE_IP"; then
     else
         echo "BEE Online"
     fi
-elif check_ping "RTK_IP"; then    
+elif check_ping "$RTK_IP"; then    
     if [ "$CURRENT_IP" != "$RTK_IP" ]; then
         echo "Change BEE on RTK"
         sed -i "s/$CURRENT_IP/$RTK_IP/" "$ZONE_FILE"
