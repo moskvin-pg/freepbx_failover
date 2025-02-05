@@ -26,7 +26,7 @@ if check_ping "$BEE_IP"; then
         sed -i -E "s/([0-9]{10})/echo \$((\1+1))/e" "$ZONE_FILE"
         update_serial_and_reload_zone
     else
-        echo "All good"
+        echo "BEE Online"
     fi
 elif check_ping "RTK_IP"; then    
     if [ "$CURRENT_IP" != "$RTK_IP" ]; then
