@@ -1,4 +1,5 @@
 #!/bin/bash
+# SKUBIRA
 BEE_IP="195.239.80.210"
 RTK_IP="94.25.71.242"
 
